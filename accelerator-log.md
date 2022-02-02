@@ -4,7 +4,7 @@
 ```json
 {
   "projectName" : "tanzu-java-web-app",
-  "repositoryPrefix" : "https://github.com/apollonine/one.git"
+  "repositoryPrefix" : "https://github.com/apollonine/"
 }
 ```
 ## Log
