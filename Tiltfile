@@ -2,6 +2,8 @@ SOURCE_IMAGE = os.getenv("SOURCE_IMAGE", default='https://github.com/apollonine/
 LOCAL_PATH = os.getenv("LOCAL_PATH", default='.')
 NAMESPACE = os.getenv("NAMESPACE", default='default')
 
+allow_k8s_contexts('arn:aws:eks:us-west-2:039975237480:cluster/tap-dev01')
+
 k8s_custom_deploy(
     'tanzu-java-web-app',
     apply_cmd="tanzu apps workload apply -f config/workload.yaml --live-update" +
